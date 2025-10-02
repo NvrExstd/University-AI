@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Страница — 1" id="wA6A4e18b84P68BUizGK">
+    <mxGraphModel dx="640" dy="955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T7-__e4PAi58qhvMGvup-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="660" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-2" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;WEB - интерфейс&lt;/div&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=26;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="550" y="212" width="170" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-7" value="Сервер" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-8" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Модули отчетности&lt;/div&gt;&lt;div&gt;и аналитики&lt;/div&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=26;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="850" y="212" width="170" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0.621;exitY=0.006;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=71;entryDy=170;entryPerimeter=0;" edge="1" parent="1" source="T7-__e4PAi58qhvMGvup-2" target="T7-__e4PAi58qhvMGvup-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="340" as="sourcePoint" />
+            <mxPoint x="770" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-10" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;База данных&lt;/div&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=26;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="400" width="170" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-11" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=116;exitDy=98;exitPerimeter=0;entryX=0;entryY=0;entryDx=71;entryDy=170;entryPerimeter=0;" edge="1" parent="1" source="T7-__e4PAi58qhvMGvup-2" target="T7-__e4PAi58qhvMGvup-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="281" as="sourcePoint" />
+            <mxPoint x="891" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=116;exitDy=98;exitPerimeter=0;entryX=0;entryY=0;entryDx=45;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="T7-__e4PAi58qhvMGvup-8" target="T7-__e4PAi58qhvMGvup-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="410" as="sourcePoint" />
+            <mxPoint x="738" y="553" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="230" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-14" value="Клиент" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-15" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;WEB - браузер&lt;/div&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=26;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="212" width="170" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=45;exitDy=0;exitPerimeter=0;entryX=0.388;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="T7-__e4PAi58qhvMGvup-15" target="T7-__e4PAi58qhvMGvup-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="440" as="sourcePoint" />
+            <mxPoint x="400" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T7-__e4PAi58qhvMGvup-18" value="HTTP/HTTPS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

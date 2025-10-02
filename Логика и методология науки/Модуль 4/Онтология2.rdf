@@ -1,0 +1,734 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_DB_and_storage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_DB_and_storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сервер"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#База_данных"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Файловое_хранилище"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_Domen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_Domen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сервер"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Доменное_имя"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_IP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_IP">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Клиент"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сервер"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#IP_адрес"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_Server -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#has_Server">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Блог"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Вебсайт"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеоконференцсвязь"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеохостинг"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Магазин_онлайн_игр"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Музыка"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Навигатор"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Облачное_хранилище"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_банк"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_библиотека"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_магазин"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Переводчик"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Платформа_для_обучения"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Поисковая_система"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прогноз_погоды"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Стриминговая_платформа"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Умный_дом"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Форум"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Электронная_почта"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сервер"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#use_IoT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#use_IoT">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Умный_дом"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Интернет_вещей_IoT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#use_VR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#use_VR">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеохостинг"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Платформа_для_обучения"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Виртуальная_реальность"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#IP_адрес -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#IP_адрес">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Основные_технологии"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#База_данных -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#База_данных">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Блог -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Блог">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Вебсайт -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Вебсайт">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеоконференцсвязь -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеоконференцсвязь">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеохостинг -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеохостинг">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Виртуальная_реальность -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Виртуальная_реальность">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Основные_технологии"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Доменное_имя -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Доменное_имя">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Основные_технологии"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Интернет_вещей_IoT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Интернет_вещей_IoT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Основные_технологии"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Клиент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Клиент">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Магазин_онлайн_игр -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Магазин_онлайн_игр">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Музыка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Музыка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Навигатор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Навигатор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Облачное_хранилище -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Облачное_хранилище">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_банк -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_банк">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_библиотека -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_библиотека">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_магазин -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_магазин">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Основные_технологии -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Основные_технологии"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Переводчик -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Переводчик">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Платформа_для_обучения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Платформа_для_обучения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Поисковая_система -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Поисковая_система">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прогноз_погоды -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прогноз_погоды">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сервер -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сервер">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Стриминговая_платформа -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Стриминговая_платформа">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Умный_дом -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Умный_дом">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Файловое_хранилище -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Файловое_хранилище">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Инфраструктура"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Форум -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Форум">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Мультимедиа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Электронная_почта -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Электронная_почта">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прикладные_сервисы"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Discord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Discord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеоконференцсвязь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#DuckDuckGo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#DuckDuckGo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Поисковая_система"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Dzen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Dzen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Блог"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#EpicGames -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#EpicGames">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Магазин_онлайн_игр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Facebook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Facebook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#GMail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#GMail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Электронная_почта"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#GOG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#GOG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Магазин_онлайн_игр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Поисковая_система"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Google_Translate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Google_Translate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Переводчик"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Google_cloud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Google_cloud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Облачное_хранилище"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Habr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Habr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Блог"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#IVI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#IVI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Instagram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Instagram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Kion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Kion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Litnet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Litnet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_библиотека"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Litres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Litres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_библиотека"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#MEGA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#MEGA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Облачное_хранилище"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#MySQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#MySQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#База_данных"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#PostgreSQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#PostgreSQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#База_данных"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#RuTube -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#RuTube">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеохостинг"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Skillbox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Skillbox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Платформа_для_обучения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Skype -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Skype">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеоконференцсвязь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Spotify -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Spotify">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Steam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Steam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Магазин_онлайн_игр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Telegram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Telegram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Twitch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Twitch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Стриминговая_платформа"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#VK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#VK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Социальная_сеть"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Wildberries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Wildberries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_магазин"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Wink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Wink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Youtube -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Youtube">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеохостинг"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#medtech.info -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#medtech.info">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Форум"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#АльфаБанк -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#АльфаБанк">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_банк"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Кинопоиск -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Кинопоиск">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_кинотеатр"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Озон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Озон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_магазин"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сбер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Сбер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_банк"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Телемост -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Телемост">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Видеоконференцсвязь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Тинькофф -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Тинькофф">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Онлайн_банк"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Поисковая_система"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Диск -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Диск">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Облачное_хранилище"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Карты -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Карты">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Навигатор"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Музыка -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Музыка">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Музыка"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Переводчик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Переводчик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Переводчик"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Погода -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Погода">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Прогноз_погоды"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Почта -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Яндекс.Почта">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-7#Электронная_почта"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

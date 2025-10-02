@@ -1,0 +1,127 @@
+<model id="{0c086ea8-f121-46c3-a498-8d748cbf983c}" shortName="Model 1" formatXmlVersion="2.0" description="Model 1">
+<class id="{603923e1-57cf-463a-aa0d-a9c2f915c511}" shortName="Model 1">
+<parameters>
+<parameter id="0130f0e5-3e39-49d6-a504-129897bfda89" shortName="P6. Латентность обработки изображений" type="double"/>
+<parameter id="1c32c77a-778d-42c7-9ddd-111fda3a9e7e" shortName="Точность на известных изображениях" type="double"/>
+<parameter id="24fe52cf-393f-46a2-94a9-3e67c2ba37b8" shortName="ЛО P8" type="double"/>
+<parameter id="30026baa-97f4-4cbe-b874-c42b2ddb8019" shortName="Обновляемость базы изображений" type="double"/>
+<parameter id="3480a6fa-89f1-4e6b-8d59-c487cd8ddfe1" shortName="Сложность нейросетевой модели" type="double"/>
+<parameter id="36e181a1-6821-46b7-af4e-8750013d389b" shortName="Интегральный показатель" type="double"/>
+<parameter id="3dbaac45-a000-4865-934f-f3f3742c857a" shortName="FN (False Negative)" type="double"/>
+<parameter id="3e0b3d1f-3d78-4cac-a884-b0252475e736" shortName="Среднее время обработки одного изображения" type="double"/>
+<parameter id="4b92d997-73e7-48a5-8293-a3a9d9f88eeb" shortName="ЛО P3" type="double"/>
+<parameter id="4e31f5e0-50ae-445f-999a-9b0e84222c3e" shortName="ЛО P2" type="double"/>
+<parameter id="56603572-30a1-4b70-9551-70ad3b8c57a8" shortName="Вес P7" type="double"/>
+<parameter id="5a595aae-7b34-4d3b-854c-8bf3d1633c23" shortName="P4. Процент ложноположительных срабатываний" type="double"/>
+<parameter id="5fc6ed80-3972-4dfe-8d0a-20a4e6becb2a" shortName="TP (True Positive)" type="double"/>
+<parameter id="67368f71-1f8e-4b06-97b8-4b6f91de85f1" shortName="P7. Ресурсоемкость системы" type="double"/>
+<parameter id="67803f6a-5617-466e-a039-f88424090d08" shortName="Скорость обработки изображений" type="double"/>
+<parameter id="68626d26-58ed-4973-8aa1-0915cc363952" shortName="Вес P4" type="double"/>
+<parameter id="79b450a5-70ec-4097-9d31-9d61484f74a5" shortName="ЛО P7" type="double"/>
+<parameter id="810f4496-c9e7-4cd8-885c-e9ba9c926358" shortName="ЛО P4" type="double"/>
+<parameter id="811e5641-b8ba-4f15-ad8c-15736138f25b" shortName="Качество предобработки изображений" type="double"/>
+<parameter id="932c409d-2ead-4fab-843b-dee45d2f41ca" shortName="Разнообразие паталогий" type="double"/>
+<parameter id="982baf25-2b4a-4acf-8412-c9ab4635fbae" shortName="Вес P5" type="double"/>
+<parameter id="9b151c82-48c9-4ad5-810e-0bf4aa067d83" shortName="P1. Точность распознавания" type="double"/>
+<parameter id="a02c6175-8d4a-4f60-8f88-3be7b54ad73f" shortName="Размер обучающей выборки" type="double"/>
+<parameter id="a7ba5586-b006-4ff0-a46a-9d51a1703b2f" shortName="TN (True Negative)" type="double"/>
+<parameter id="b0010a24-6623-46ce-a1e7-915a57cdcd0c" shortName="Использование CPU" type="double"/>
+<parameter id="bad65829-395d-40a4-b38a-e592dd0b5e38" shortName="FP (False Positive)" type="double"/>
+<parameter id="bd35481b-f757-4812-985b-202825c7aa0d" shortName="Вес P3" type="double"/>
+<parameter id="be29929c-4d89-478f-9ac7-cb4f86f12ad6" shortName="ЛО P6" type="double"/>
+<parameter id="c1a48211-183e-4f9f-8684-522a33ea7381" shortName="Вес P1" type="double"/>
+<parameter id="c4b999ab-6c3e-4c17-b6c0-adcf8b4b7ebb" shortName="Вес P8" type="double"/>
+<parameter id="cadff00d-6abf-4bc3-ba33-1ee8f9d0f53d" shortName="Качество векторного представления" type="double"/>
+<parameter id="cc910364-5b72-4a8a-a5b0-e8aba91113dd" shortName="Вес P6" type="double"/>
+<parameter id="cca7b1cb-9528-4cc7-81b1-5ceb29d66755" shortName="P5. Процент ложноотрицательных срабатываний" type="double"/>
+<parameter id="d0e891f9-871a-4a5e-be7a-ecc699d5eea8" shortName="P2. Полнота распознавания" type="double"/>
+<parameter id="d3c02f4d-94eb-48e5-bb54-3954007dec22" shortName="ЛО P5" type="double"/>
+<parameter id="d9ed5093-1931-43ba-8d95-b49e57e871fb" shortName="Использование памяти" type="double"/>
+<parameter id="e74f5fb2-8299-4da1-bce3-3957210b0736" shortName="ЛО P1" type="double"/>
+<parameter id="ead19417-499b-410c-918f-804dc0748eaf" shortName="Точность на новых изображениях" type="double"/>
+<parameter id="eda2f76a-a926-4b62-9b50-6276fb860702" shortName="P8. Адаптивность к новым типам паталогий" type="double"/>
+<parameter id="f82e8d8b-b95b-46a6-b05f-47fc3dd22e20" shortName="Вес P2" type="double"/>
+<parameter id="f9eeedd5-40e4-4f68-8e21-96c6efd76b08" shortName="P3. F1-мера" type="double"/>
+</parameters>
+<rules>
+<rule id="13b0d4b7-acb0-42c7-91fc-dd4367fc0857" shortName="ЛО P6" relation="bea6388a-38d2-4753-8be1-bf20c6095bbe" resultId="y:be29929c-4d89-478f-9ac7-cb4f86f12ad6" initId="p6:0130f0e5-3e39-49d6-a504-129897bfda89"/>
+<rule id="2f2d688d-925a-4c96-97fd-123a265a68b8" shortName="Расчет полноты" relation="12203ebb-8028-4d86-8a69-84a272d0b275" resultId="y:d0e891f9-871a-4a5e-be7a-ecc699d5eea8" initId="a:5fc6ed80-3972-4dfe-8d0a-20a4e6becb2a;c:3dbaac45-a000-4865-934f-f3f3742c857a"/>
+<rule id="3d440461-62ec-4bc3-b146-04cdeb692446" shortName="Расчет точности" relation="fe6bb8e2-baf3-469f-8505-605d1adcbcbb" resultId="y:9b151c82-48c9-4ad5-810e-0bf4aa067d83" initId="a:5fc6ed80-3972-4dfe-8d0a-20a4e6becb2a;b:bad65829-395d-40a4-b38a-e592dd0b5e38"/>
+<rule id="3e4670e5-e241-4645-a554-172c540ab78b" shortName="Расчет F1" relation="a8fc44c2-5fee-47af-8931-b22f2fbd13c3" resultId="y:f9eeedd5-40e4-4f68-8e21-96c6efd76b08" initId="a:9b151c82-48c9-4ad5-810e-0bf4aa067d83;b:d0e891f9-871a-4a5e-be7a-ecc699d5eea8"/>
+<rule id="424c454d-7d76-4c85-964c-c38a1b01faa3" shortName="Расчет адаптивности" relation="5a9aba71-4292-48ab-b9a8-984d03d7444a" resultId="y:eda2f76a-a926-4b62-9b50-6276fb860702" initId="a:ead19417-499b-410c-918f-804dc0748eaf;b:1c32c77a-778d-42c7-9ddd-111fda3a9e7e"/>
+<rule id="5104d3c6-cd8e-4e92-bee0-29a2024a4610" shortName="ЛО P1" relation="599fcae6-2e99-4a1d-a64f-0a606e091d38" resultId="y:e74f5fb2-8299-4da1-bce3-3957210b0736" initId="p1:9b151c82-48c9-4ad5-810e-0bf4aa067d83"/>
+<rule id="54590fc6-f38a-4cea-84ba-3f08e2142899" shortName="ЛО P4" relation="150534c3-db63-4bb2-bd88-91de96043e40" resultId="y:810f4496-c9e7-4cd8-885c-e9ba9c926358" initId="p4:5a595aae-7b34-4d3b-854c-8bf3d1633c23"/>
+<rule id="612a7aaf-7b27-40f5-8f94-6e6d533813e2" shortName="Расчет FNR" relation="d0586ec9-a953-45ca-a047-40bc6dc02213" resultId="y:cca7b1cb-9528-4cc7-81b1-5ceb29d66755" initId="a:3dbaac45-a000-4865-934f-f3f3742c857a;b:5fc6ed80-3972-4dfe-8d0a-20a4e6becb2a"/>
+<rule id="64a5eb0f-44c5-4bf3-8532-cb068e132d14" shortName="ЛО P8" relation="3d68cdb2-9991-43a4-bb3a-7da4f2b20bc8" resultId="y:24fe52cf-393f-46a2-94a9-3e67c2ba37b8" initId="p8:eda2f76a-a926-4b62-9b50-6276fb860702"/>
+<rule id="6eda5435-fc10-4bfa-9176-8e42449c8631" shortName="ЛО P3" relation="24b2ff46-f22c-4a3b-a75e-7a60ee1d9dd4" resultId="y:4b92d997-73e7-48a5-8293-a3a9d9f88eeb" initId="p3:f9eeedd5-40e4-4f68-8e21-96c6efd76b08"/>
+<rule id="984da2cd-a85a-4cf3-afd9-7b3732483fc4" shortName="Расчет FPR" relation="a98f9a2f-3be4-42bb-97ac-5dd6d0a109b0" resultId="y:5a595aae-7b34-4d3b-854c-8bf3d1633c23" initId="a:bad65829-395d-40a4-b38a-e592dd0b5e38;b:a7ba5586-b006-4ff0-a46a-9d51a1703b2f"/>
+<rule id="ad89f438-6fdc-477e-9140-00da543449bf" shortName="ЛО P5" relation="bd642842-a1b8-4ba0-94bb-c549119eaccc" resultId="y:d3c02f4d-94eb-48e5-bb54-3954007dec22" initId="p5:cca7b1cb-9528-4cc7-81b1-5ceb29d66755"/>
+<rule id="bc4becf0-8824-4715-8df5-1f4154b2100d" shortName="Интегральный показатель" relation="03eaa3cc-b2f0-420f-8839-51972edfb9c3" resultId="y:36e181a1-6821-46b7-af4e-8750013d389b" initId="w5l5:982baf25-2b4a-4acf-8412-c9ab4635fbae;w4l4:68626d26-58ed-4973-8aa1-0915cc363952;w3l3:bd35481b-f757-4812-985b-202825c7aa0d;w8l8:c4b999ab-6c3e-4c17-b6c0-adcf8b4b7ebb;w1l1:c1a48211-183e-4f9f-8684-522a33ea7381;w2l2:f82e8d8b-b95b-46a6-b05f-47fc3dd22e20;w7l7:56603572-30a1-4b70-9551-70ad3b8c57a8;w6l6:cc910364-5b72-4a8a-a5b0-e8aba91113dd"/>
+<rule id="c4086e31-34f7-4f76-880d-0a3bb5ab5c40" shortName="Расчет ресурсоемкости" relation="13dd386c-f550-40b0-b96c-735473c13456" resultId="y:67368f71-1f8e-4b06-97b8-4b6f91de85f1" initId="a:b0010a24-6623-46ce-a1e7-915a57cdcd0c;b:d9ed5093-1931-43ba-8d95-b49e57e871fb"/>
+<rule id="cb54078b-b7e7-4c2c-82cf-28b403e11676" shortName="ЛО P2" relation="6d5178f8-5154-4862-8b6c-1a45d24edce4" resultId="y:4e31f5e0-50ae-445f-999a-9b0e84222c3e" initId="p2:d0e891f9-871a-4a5e-be7a-ecc699d5eea8"/>
+<rule id="d3490b91-7f65-4e72-bc3c-a525ce13ee02" shortName="ЛО P7" relation="1736d392-7a3a-4a3d-90db-f09179df2d2c" resultId="y:79b450a5-70ec-4097-9d31-9d61484f74a5" initId="p7:67368f71-1f8e-4b06-97b8-4b6f91de85f1"/>
+<rule id="f295b9d8-1207-4f61-b9a2-2cbc20c1a5d3" shortName="P6" relation="a59ccf8c-7ae0-4adb-963e-453d77af23fc" resultId="y:0130f0e5-3e39-49d6-a504-129897bfda89" initId="a:3e0b3d1f-3d78-4cac-a884-b0252475e736"/>
+</rules>
+<constraints/>
+<classes/>
+</class>
+<relations>
+<relation id="03eaa3cc-b2f0-420f-8839-51972edfb9c3" shortName="Расчет интегрального показателя" inObj="w5l5:double;w4l4:double;w3l3:double;w8l8:double;w1l1:double;w2l2:double;w7l7:double;w6l6:double" relationType="simple" outObj="y:double">y = (w1l1 + w2l2 + w3l3 + w4l4 + w8l8) - (w5l5 + w6l6 + w7l7)</relation>
+<relation id="12203ebb-8028-4d86-8a69-84a272d0b275" shortName="Расчет полноты" inObj="a:double;c:double" relationType="simple" outObj="y:double">y = a / (a + c)</relation>
+<relation id="13dd386c-f550-40b0-b96c-735473c13456" shortName="Расчет ресурсоемкости" inObj="a:double;b:double" relationType="simple" outObj="y:double">y = (a + b) / 2</relation>
+<relation id="150534c3-db63-4bb2-bd88-91de96043e40" shortName="Расчет ЛО P4" inObj="p4:double" relationType="prog" outObj="y:double">var p4, y;&#xd;&#xd;
+if (p4 &lt; 0.05) {y = 5;}&#xd;&#xd;
+else if (p4 &lt; 0.1) {y = 4;}&#xd;&#xd;
+else if (p4 &lt; 0.15) {y = 3;}&#xd;&#xd;
+else if (p4 &lt; 0.2) {y = 2;}&#xd;&#xd;
+else if (p4 >= 0.2) {y = 1;}</relation>
+<relation id="1736d392-7a3a-4a3d-90db-f09179df2d2c" shortName="Расчет ЛО P7" inObj="p7:double" relationType="prog" outObj="y:double">var p7, y;&#xd;&#xd;
+if (p7 &lt; 30) {y = 5;}&#xd;&#xd;
+else if (p7 &lt; 50) {y = 4;}&#xd;&#xd;
+else if (p7 &lt; 70) {y = 3;}&#xd;&#xd;
+else if (p7 &lt; 90) {y = 2;}&#xd;&#xd;
+else if (p7 >= 90) {y = 1;}</relation>
+<relation id="24b2ff46-f22c-4a3b-a75e-7a60ee1d9dd4" shortName="Расчет ЛО P3" inObj="p3:double" relationType="prog" outObj="y:double">var p3, y;&#xd;&#xd;
+if (p3 &lt; 0.6) {y = 1;}&#xd;&#xd;
+else if (p3 &lt; 0.7) {y = 2;}&#xd;&#xd;
+else if (p3 &lt; 0.8) {y = 3;}&#xd;&#xd;
+else if (p3 &lt; 0.9) {y = 4;}&#xd;&#xd;
+else if (p3 >= 0.9) {y = 5;}</relation>
+<relation id="3d68cdb2-9991-43a4-bb3a-7da4f2b20bc8" shortName="Расчет ЛО P8" inObj="p8:double" relationType="prog" outObj="y:double">var p8, y;&#xd;&#xd;
+if (p8 &lt; 60) {y = 1;}&#xd;&#xd;
+else if (p8 &lt; 70) {y = 2;}&#xd;&#xd;
+else if (p8 &lt; 80) {y = 3;}&#xd;&#xd;
+else if (p8 &lt; 90) {y = 4;}&#xd;&#xd;
+else if (p8 >= 90) {y = 5;}</relation>
+<relation id="599fcae6-2e99-4a1d-a64f-0a606e091d38" shortName="Расчет ЛО P1" inObj="p1:double" relationType="prog" outObj="y:double">var p1, y;&#xd;&#xd;
+if (p1 &lt; 0.6) {y = 1;}&#xd;&#xd;
+else if (p1 &lt; 0.7) {y = 2;}&#xd;&#xd;
+else if (p1 &lt; 0.8) {y = 3;}&#xd;&#xd;
+else if (p1 &lt; 0.9) {y = 4;}&#xd;&#xd;
+else if (p1 >= 0.9) {y = 5;}</relation>
+<relation id="5a9aba71-4292-48ab-b9a8-984d03d7444a" shortName="Расчет адаптивности" inObj="a:double;b:double" relationType="simple" outObj="y:double">y = (a / b) * 100</relation>
+<relation id="6d5178f8-5154-4862-8b6c-1a45d24edce4" shortName="Расчет ЛО P2" inObj="p2:double" relationType="prog" outObj="y:double">var p2, y;&#xd;&#xd;
+if (p2 &lt; 0.6) {y = 1;}&#xd;&#xd;
+else if (p2 &lt; 0.7) {y = 2;}&#xd;&#xd;
+else if (p2 &lt; 0.8) {y = 3;}&#xd;&#xd;
+else if (p2 &lt; 0.9) {y = 4;}&#xd;&#xd;
+else if (p2 >= 0.9) {y = 5;}</relation>
+<relation id="a59ccf8c-7ae0-4adb-963e-453d77af23fc" shortName="P6" inObj="a:double" relationType="simple" outObj="y:double">y = a</relation>
+<relation id="a8fc44c2-5fee-47af-8931-b22f2fbd13c3" shortName="Расчет F1" inObj="a:double;b:double" relationType="simple" outObj="y:double">y = 2 * (a * b) / (a + b)</relation>
+<relation id="a98f9a2f-3be4-42bb-97ac-5dd6d0a109b0" shortName="Расчет FPR" inObj="a:double;b:double" relationType="simple" outObj="y:double">y = a / (a + b)</relation>
+<relation id="bd642842-a1b8-4ba0-94bb-c549119eaccc" shortName="Расчет ЛО P5" inObj="p5:double" relationType="prog" outObj="y:double">var p5, y;&#xd;&#xd;
+if (p5 &lt; 0.05) {y = 5;}&#xd;&#xd;
+else if (p5 &lt; 0.1) {y = 4;}&#xd;&#xd;
+else if (p5 &lt; 0.15) {y = 3;}&#xd;&#xd;
+else if (p5 &lt; 0.2) {y = 2;}&#xd;&#xd;
+else if (p5 >= 0.2) {y = 1;}</relation>
+<relation id="bea6388a-38d2-4753-8be1-bf20c6095bbe" shortName="Расчет ЛО P6" inObj="p6:double" relationType="prog" outObj="y:double">var p6, y;&#xd;&#xd;
+if (p6 &lt; 100) {y = 5;}&#xd;&#xd;
+else if (p6 &lt; 200) {y = 4;}&#xd;&#xd;
+else if (p6 &lt; 500) {y = 3;}&#xd;&#xd;
+else if (p6 &lt; 1000) {y = 2;}&#xd;&#xd;
+else if (p6 >= 1000) {y = 1;}</relation>
+<relation id="d0586ec9-a953-45ca-a047-40bc6dc02213" shortName="Расчет FNR" inObj="a:double;b:double" relationType="simple" outObj="y:double">y = a / (b + a)</relation>
+<relation id="fe6bb8e2-baf3-469f-8505-605d1adcbcbb" shortName="Расчет точности" inObj="a:double;b:double" relationType="simple" outObj="y:double">y = a / (a + b)</relation>
+</relations>
+</model>

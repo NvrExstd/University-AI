@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/asustud/ontologies/2025/1/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/asustud/ontologies/2025/1/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/asustud/ontologies/2025/1/untitled-ontology-8/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Активные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Золотой_покупатель"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Клиент"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Новички"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Отток"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_знакомым_с"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_предком"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_сиблингом"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_мать"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#последняя_активность"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Васильев_В."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кузнецова_М."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кузьмин_К."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лазуткина_М."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Марьина_А."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мурина_М."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Петрова_А."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Петрова_Е."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Смирнов_С."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Федоров_А."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Федоров_И."/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Активные"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Клиент"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#последняя_активность"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:dateTime"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-10T00:00:00Z</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Золотой_покупатель"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Активные"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_заказов"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Новички"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Клиент"/>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_количество_заказов"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Отток"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Клиент"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#последняя_активность"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:dateTime"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-10T00:00:00Z</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Активные"/>
+        <Class IRI="#Клиент"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Золотой_покупатель"/>
+        <Class IRI="#Активные"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Новички"/>
+        <Class IRI="#Клиент"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Отток"/>
+        <Class IRI="#Клиент"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Активные"/>
+        <Class IRI="#Новички"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Активные"/>
+        <Class IRI="#Отток"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Новички"/>
+        <Class IRI="#Отток"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Новички"/>
+        <NamedIndividual IRI="#Васильев_В."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клиент"/>
+        <NamedIndividual IRI="#Кузьмин_К."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Новички"/>
+        <NamedIndividual IRI="#Лазуткина_М."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клиент"/>
+        <NamedIndividual IRI="#Марьина_А."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Новички"/>
+        <NamedIndividual IRI="#Мурина_М."/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#быть_сиблингом"/>
+        <NamedIndividual IRI="#Васильев_В."/>
+        <NamedIndividual IRI="#Кузьмин_К."/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_мать"/>
+        <NamedIndividual IRI="#Васильев_В."/>
+        <NamedIndividual IRI="#Лазуткина_М."/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_мать"/>
+        <NamedIndividual IRI="#Васильев_В."/>
+        <NamedIndividual IRI="#Мурина_М."/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+        <NamedIndividual IRI="#Марьина_А."/>
+        <NamedIndividual IRI="#Мурина_М."/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Васильев_В."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Кузнецова_М."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#последняя_активность"/>
+        <NamedIndividual IRI="#Кузнецова_М."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-31T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Кузьмин_К."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Петрова_А."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#последняя_активность"/>
+        <NamedIndividual IRI="#Петрова_А."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-20T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Петрова_Е."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#последняя_активность"/>
+        <NamedIndividual IRI="#Петрова_Е."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Смирнов_С."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#последняя_активность"/>
+        <NamedIndividual IRI="#Смирнов_С."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-11T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Федоров_А."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#последняя_активность"/>
+        <NamedIndividual IRI="#Федоров_А."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-12T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <NamedIndividual IRI="#Федоров_И."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#последняя_активность"/>
+        <NamedIndividual IRI="#Федоров_И."/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+        <ObjectProperty IRI="#быть_предком"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#иметь_мать"/>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_мать"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#быть_сиблингом"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#иметь_мать"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#быть_предком"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#быть_знакомым_с"/>
+    </ReflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#иметь_мать"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#иметь_ребенка"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#быть_знакомым_с"/>
+        <Class IRI="#Клиент"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#быть_предком"/>
+        <Class IRI="#Клиент"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_мать"/>
+        <Class IRI="#Клиент"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#быть_знакомым_с"/>
+        <Class IRI="#Клиент"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#быть_предком"/>
+        <Class IRI="#Клиент"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_мать"/>
+        <Class IRI="#Клиент"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <Class IRI="#Клиент"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#последняя_активность"/>
+        <Class IRI="#Клиент"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_количество_заказов"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#последняя_активность"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

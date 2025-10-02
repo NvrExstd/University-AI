@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IP-address"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#browser_load -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#browser_load">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Network_protocols"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#social_network -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#social_network">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Website"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_network"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#website_address -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#website_address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Website"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IP-address"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#website_show -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#website_show">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Website"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#AR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#AR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Blockchain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Blockchain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Blog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Blog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Content_management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#CMS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#CMS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Content_management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Content_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Content_management"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Crowdfunding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Crowdfunding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Cryptocurrencies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Cryptocurrencies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Cybersecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Cybersecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Safety_and_security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#DNS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#DNS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Main_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Data_storage-exchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Data_storage-exchange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#E-commerce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#E-commerce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Entertainment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Entertainment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#File_sharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#File_sharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Data_storage-exchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#File_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#File_storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Data_storage-exchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Fishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Fishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Safety_and_security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Hosting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Hosting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Data_storage-exchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IP-address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IP-address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Main_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Internet_censorship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Internet_censorship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Safety_and_security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IoT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IoT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Main_Technologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Main_Technologies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Multimedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Multimedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Network_protocols -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Network_protocols">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Main_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Online_games -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Online_games">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#RSS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#RSS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Content_management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#SEO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#SEO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Content_management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Safety_and_security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Safety_and_security"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_media"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Torrents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Torrents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Data_storage-exchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Main_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#New_technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web-application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web-application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Website -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Website">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Web_Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#edge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#edge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#google_chrome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#google_chrome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#hamachi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#hamachi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#http -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#http">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Network_protocols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#https -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#https">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Network_protocols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#radmin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#radmin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#VPN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#telegram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#telegram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_network"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#vk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#vk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Social_network"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#yandex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#yandex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#Browser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#10.10.10.10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#10.10.10.10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/v-mar/ontologies/2024/10/untitled-ontology-2#IP-address"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

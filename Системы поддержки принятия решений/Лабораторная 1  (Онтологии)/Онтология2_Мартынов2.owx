@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/v-mar/ontologies/2025/2/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/v-mar/ontologies/2025/2/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/v-mar/ontologies/2025/2/untitled-ontology-10/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Адрес"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Анализатор"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ангиограф"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#КТ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ЛПУ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Маммограф"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Медтехника"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Рентген"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Флюорограф"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Резервная_копия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Аэропортовское_шоссе"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Володарская_РБ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ГКБ_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ГКБ_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ГорПол_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ГорПол_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ГорПол_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Икрянинская_РБ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Красноярская_РБ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ренекс-Ф5000_1548"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ренекс-Ф5000_1876"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ФЦМБАРС-Ренекс_1090"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Центр_Оргнабора"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Анализатор"/>
+        <Class IRI="#Медтехника"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ангиограф"/>
+        <Class IRI="#Медтехника"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#КТ"/>
+        <Class IRI="#Медтехника"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Маммограф"/>
+        <Class IRI="#Медтехника"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Рентген"/>
+        <Class IRI="#Медтехника"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Флюорограф"/>
+        <Class IRI="#Медтехника"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Анализатор"/>
+        <Class IRI="#Ангиограф"/>
+        <Class IRI="#КТ"/>
+        <Class IRI="#Маммограф"/>
+        <Class IRI="#Рентген"/>
+        <Class IRI="#Флюорограф"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Адрес"/>
+        <NamedIndividual IRI="#Аэропортовское_шоссе"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#Володарская_РБ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#ГКБ_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#ГКБ_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#ГорПол_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#ГорПол_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#ГорПол_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#Икрянинская_РБ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#Красноярская_РБ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Флюорограф"/>
+        <NamedIndividual IRI="#Ренекс-Ф5000_1876"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Флюорограф"/>
+        <NamedIndividual IRI="#ФЦМБАРС-Ренекс_1090"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЛПУ"/>
+        <NamedIndividual IRI="#Центр_Оргнабора"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+        <NamedIndividual IRI="#ФЦМБАРС-Ренекс_1090"/>
+        <NamedIndividual IRI="#Аэропортовское_шоссе"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+        <NamedIndividual IRI="#Центр_Оргнабора"/>
+        <NamedIndividual IRI="#Аэропортовское_шоссе"/>
+    </ObjectPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+        <Class IRI="#Адрес"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+        <Class IRI="#Адрес"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Иметь_адрес"/>
+        <Class IRI="#ЛПУ"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Находиться_по_адресу"/>
+        <Class IRI="#Медтехника"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Резервная_копия"/>
+        <Class IRI="#Медтехника"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Резервная_копия"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

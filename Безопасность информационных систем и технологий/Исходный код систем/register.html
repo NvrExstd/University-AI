@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+<h2>Регистрация</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="username" class="form-label">Имя пользователя</label>
+        <input name="username" id="username" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Пароль</label>
+        <input type="password" name="password" id="password" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="password_confirm" class="form-label">Подтверждение пароля</label>
+        <input type="password" name="password_confirm" id="password_confirm" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="fullname" class="form-label">ФИО</label>
+        <input name="fullname" id="fullname" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="dob" class="form-label">Дата рождения</label>
+        <input type="date" name="dob" id="dob" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="city" class="form-label">Место рождения (город)</label>
+        <input name="city" id="city" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Телефон</label>
+        <input name="phone" id="phone" type="tel" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+</form>
+{% endblock %}
