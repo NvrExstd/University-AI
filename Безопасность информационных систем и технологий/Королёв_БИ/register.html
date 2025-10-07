@@ -1,0 +1,118 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Регистрация</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    background-color: #2f4f7f;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 420px;
+  }
+  h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  input[type="text"], input[type="password"], input[type="date"], input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background-color: #e9ecef;
+    color: #333;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  input:focus {
+    box-shadow: 0 0 8px 3px #72c07a;
+    background-color: #fff;
+  }
+  button {
+    background: linear-gradient(90deg, #4CAF50, #379933);
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(55, 153, 51, 0.8);
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #3a8e36, #2d6a29);
+  }
+  .flash-message {
+    background-color: #ffdddd;
+    color: #a94442;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Регистрация</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash-message">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    
+    <form method="POST">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" required autofocus>
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="password_confirm">Повтор пароля:</label>
+      <input type="password" id="password_confirm" name="password_confirm" required>
+
+      <label for="fullname">Фамилия Имя Отчество:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="dob">Дата рождения:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="city">Город:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</body>
+</html>
