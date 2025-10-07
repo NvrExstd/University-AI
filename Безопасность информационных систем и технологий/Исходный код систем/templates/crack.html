@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Взлом шифра{% endblock %}
+
+{% block content %}
+<h1>Взлом шифра Виженера</h1>
+<form method="post">
+    <textarea name="text" rows="6" placeholder="Введите зашифрованный текст здесь..."></textarea><br>
+    <button type="submit">Взломать</button>
+</form>
+{% if key_found %}
+    <div><h3>Найденный ключ:</h3><pre>{{ key_found }}</pre></div>
+{% endif %}
+{% if decrypted_text %}
+    <div><h3>Расшифрованный текст:</h3><pre>{{ decrypted_text }}</pre></div>
+{% endif %}
+{% endblock %}

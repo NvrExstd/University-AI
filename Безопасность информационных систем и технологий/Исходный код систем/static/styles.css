@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #013220; /* темно-изумрудный */
+    color: #e0e0e0;
+    margin: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #80cfa9; /* светло-зеленый */
+    margin-right: 20px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #b2f2bb;
+}
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #014d32; /* чуть светлее фон контейнера */
+    padding: 20px;
+    box-shadow: 0 0 15px #002210aa;
+    border-radius: 10px;
+}
+
+/* Общие стили для textarea, input */
+textarea, input[type=text] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Кнопки */
+button, .btn {
+    display: inline-block;
+    background: #026d36; /* изумрудный */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    margin: 15px 10px 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: #04b361;
+}
+
+/* Текстовый вывод */
+pre {
+    background: #022613;
+    padding: 10px;
+    border: 1px solid #014d32;
+    white-space: pre-wrap;
+    border-radius: 6px;
+}
+
+/* Контейнер для кнопок на главной */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}

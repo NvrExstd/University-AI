@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Шифрование/Расшифровка{% endblock %}
+
+{% block content %}
+<h1>Шифрование и Расшифровка (Виженер)</h1>
+<form method="post">
+    <textarea name="text" rows="6" placeholder="Введите текст здесь..."></textarea><br>
+    <input type="text" name="key" placeholder="Введите ключ"><br>
+    <button type="submit" name="action" value="encrypt">Зашифровать</button>
+    <button type="submit" name="action" value="decrypt">Расшифровать</button>
+</form>
+<h2>Результат:</h2>
+<pre>{{ result }}</pre>
+{% endblock %}
