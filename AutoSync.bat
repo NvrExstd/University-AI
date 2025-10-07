@@ -28,4 +28,3 @@ git commit -m "%commit_message%"
 rem Отправить изменения на удаленный репозиторий
 git push origin main
 
-pause
