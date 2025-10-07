@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Универсальная крипто-программа</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    background: #022613; /* темно-изумрудный */
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  input[type=number] {
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .button {
+    display: block;
+    margin: 25px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #008554; /* светло-зелёный оттенок */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .button:hover {
+    background-color: #003b28;
+  }
+  .result {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+
+<h2>Крипто-программа</h2>
+
+<form method="post">
+  <label for="text">Введите текст:</label>
+  <textarea name="text" id="text">{{ text }}</textarea>
+
+  <label for="a">Параметр a (множитель):</label>
+  <input type="number" name="a" id="a" value="{{ a }}">
+
+  <label for="b">Параметр b (сдвиг):</label>
+  <input type="number" name="b" id="b" value="{{ b }}">
+
+  <label for="t0">Начальное значение t0 (0-255):</label>
+  <input type="number" name="t0" id="t0" value="{{ t0 }}">
+
+  <button class="button" type="submit">Выполнить</button>
+</form>
+
+{% if checksum_result %}
+<div class="result">
+  {{ checksum_result }}
+  <br><br>
+  <strong>Гаммирование:</strong><br>
+  {{ gamma_encrypted|safe }}
+</div>
+{% endif %}
+
+</body>
+</html>
