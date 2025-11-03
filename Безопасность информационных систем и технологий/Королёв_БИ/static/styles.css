@@ -1,0 +1,117 @@
+/* Основные цвета */
+:root {
+    --sky-blue: #87CEEB; /* небесно-голубой */
+    --dark-blue: #03396c; /* темно-синий для контраста */
+    --white: #ffffff;
+    --light-gray: #f0f8ff;
+    --hover-blue: #5aa0d8; /* более насыщенный голубой при наведении */
+}
+
+/* Общие стили страницы */
+body {
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Обертка содержимого */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(135 206 235 / 0.4);
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: var(--dark-blue);
+    margin-bottom: 16px;
+}
+
+/* Формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input[type="text"], textarea {
+    padding: 10px 14px;
+    border: 2px solid var(--sky-blue);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--dark-blue);
+    background-color: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: var(--hover-blue);
+    outline: none;
+}
+
+/* Кнопки */
+button, input[type="submit"] {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--hover-blue);
+}
+
+/* Результаты */
+.result {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    border-radius: 8px;
+    font-family: monospace, monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Ссылки */
+a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Мелкие дополнительные настройки */
+label {
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+    .container {
+        padding: 18px 20px;
+    }
+    input[type="text"], textarea {
+        font-size: 0.9rem;
+    }
+    button, input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}

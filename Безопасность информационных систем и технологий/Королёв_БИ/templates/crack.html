@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Взлом шифра Виженера</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Взлом шифра Виженера</h1>
+        <form method="post" action="{{ url_for('crack_page') }}">
+            <label for="text">Зашифрованный текст:</label>
+            <textarea id="text" name="text" rows="6" required></textarea>
+
+            <input type="submit" value="Взломать">
+        </form>
+
+        {% if key_found and decrypted_text %}
+        <div class="result">
+            <h2>Найденный ключ:</h2>
+            <p><strong>{{ key_found }}</strong></p>
+
+            <h2>Расшифрованный текст:</h2>
+            <pre>{{ decrypted_text }}</pre>
+        </div>
+        {% endif %}
+
+        <p><a href="{{ url_for('home') }}">← На главную</a></p>
+    </div>
+</body>
+</html>

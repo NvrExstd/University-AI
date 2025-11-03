@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная — Виженер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Приветствую в шифре Виженера</h1>
+        <p>Выберите действие:</p>
+        <ul>
+            <li><a href="{{ url_for('cipher_page') }}">Шифровать / Расшифровать текст</a></li>
+            <li><a href="{{ url_for('crack_page') }}">Взломать шифр Виженера</a></li>
+        </ul>
+    </div>
+</body>
+</html>

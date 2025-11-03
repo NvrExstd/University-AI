@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шифрование / Расшифрование Виженера</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Шифр Виженера: Шифрование и Расшифрование</h1>
+        <form method="post" action="{{ url_for('cipher_page') }}">
+            <label for="text">Текст:</label>
+            <textarea id="text" name="text" rows="4" required></textarea>
+
+            <label for="key">Ключ:</label>
+            <input type="text" id="key" name="key" required placeholder="Введите ключ">
+
+            <label>Действие:</label>
+            <div>
+                <input type="radio" id="encrypt" name="action" value="encrypt" checked>
+                <label for="encrypt">Зашифровать</label>
+
+                <input type="radio" id="decrypt" name="action" value="decrypt">
+                <label for="decrypt">Расшифровать</label>
+            </div>
+
+            <input type="submit" value="Выполнить">
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2>Результат:</h2>
+            <pre>{{ result }}</pre>
+        </div>
+        {% endif %}
+
+        <p><a href="{{ url_for('home') }}">← На главную</a></p>
+    </div>
+</body>
+</html>

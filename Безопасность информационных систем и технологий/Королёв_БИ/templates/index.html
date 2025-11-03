@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Универсальная крипто-программа</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #e0f7ff; /* очень светлый небесно-голубой */
+    color: #03396c; /* темно-синий текст */
+    padding: 20px;
+    border-radius: 15px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #01579b;
+  }
+  .form-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .parameters {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  input[type=number], textarea {
+    border-radius: 10px;
+    border: 2px solid #81d4fa;
+    padding: 10px;
+    font-size: 16px;
+    color: #03396c;
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  input[type=number]:focus, textarea:focus {
+    border-color: #0288d1;
+    outline: none;
+  }
+  .text-input {
+    flex: 1;
+  }
+  textarea {
+    height: 200px;
+    resize: vertical;
+  }
+  .button-container {
+    text-align: center;
+  }
+  button.button {
+    padding: 14px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4fc3f7; /* небесно-голубой */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button.button:hover {
+    background-color: #0288d1;
+  }
+  .result {
+    background: rgba(3, 57, 108, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    color: #03396c;
+    font-family: monospace, monospace;
+  }
+  @media (max-width: 700px) {
+    .form-wrapper {
+      flex-direction: column;
+    }
+    .parameters, .text-input {
+      width: 100%;
+    }
+    button.button {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>Крипто-программа</h2>
+
+<form method="post">
+  <div class="form-wrapper">
+    <div class="parameters">
+      <label for="a">Параметр a (множитель):</label>
+      <input type="number" name="a" id="a" value="{{ a }}" required>
+
+      <label for="b">Параметр b (сдвиг):</label>
+      <input type="number" name="b" id="b" value="{{ b }}" required>
+
+      <label for="t0">Начальное значение t0 (0-255):</label>
+      <input type="number" name="t0" id="t0" value="{{ t0 }}" min="0" max="255" required>
+    </div>
+
+    <div class="text-input">
+      <label for="text">Введите текст:</label>
+      <textarea name="text" id="text">{{ text }}</textarea>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button class="button" type="submit">Выполнить</button>
+  </div>
+</form>
+
+{% if checksum_result %}
+  <div class="result">
+    {{ checksum_result }}
+    <br><br>
+    <strong>Гаммирование:</strong><br>
+    {{ gamma_encrypted|safe }}
+  </div>
+{% endif %}
+
+</body>
+</html>
